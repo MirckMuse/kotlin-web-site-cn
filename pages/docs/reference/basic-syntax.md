@@ -5,11 +5,11 @@ category: "Basics"
 title: "Basic Syntax"
 ---
 
-# Basic Syntax
+# 基本语法
 
-## Defining packages
+## 定义包
 
-Package specification should be at the top of the source file:
+包申明应该被放在源文件的顶部
 
 ``` kotlin
 package my.demo
@@ -18,14 +18,13 @@ import java.util.*
 
 // ...
 ```
-
-It is not required to match directories and packages: source files can be placed arbitrarily in the file system.
+不要求目录和包相匹配:源文件能够被任意放置在文件系统中。
 
 See [Packages](packages.html).
 
-## Defining functions
+## 定义方法
 
-Function having two `Int` parameters with `Int` return type:
+方法有2个`Int`成员并返回`Int`类型:
 
 <div class="sample" markdown="1">
 
@@ -43,7 +42,7 @@ fun main(args: Array<String>) {
 ```
 </div>
 
-Function with an expression body and inferred return type:
+带有表达式体和推断返回类型的方法
 
 <div class="sample" markdown="1">
 
@@ -58,7 +57,7 @@ fun main(args: Array<String>) {
 ```
 </div>
 
-Function returning no meaningful value:
+没有返回值得函数
 
 <div class="sample" markdown="1">
 
@@ -75,7 +74,7 @@ fun main(args: Array<String>) {
 ```
 </div>
 
-`Unit` return type can be omitted:
+`Unit` 返回类型可以被省略:
 
 <div class="sample" markdown="1">
 
@@ -94,7 +93,7 @@ fun main(args: Array<String>) {
 
 See [Functions](functions.html).
 
-## Defining variables
+## 定义变量
 
 Assign-once (read-only) local variable:
 
@@ -113,7 +112,7 @@ fun main(args: Array<String>) {
 ```
 </div>
 
-Mutable variable:
+可变变量:
 
 <div class="sample" markdown="1">
 
@@ -128,7 +127,7 @@ fun main(args: Array<String>) {
 ```
 </div>
 
-Top-level variables:
+顶级变量:
 
 <div class="sample" markdown="1">
 ``` kotlin
@@ -152,10 +151,9 @@ fun main(args: Array<String>) {
 
 See also [Properties And Fields](properties.html).
 
+## 注释
 
-## Comments
-
-Just like Java and JavaScript, Kotlin supports end-of-line and block comments.
+Kotlin与Java和JavaScript相似,支持行注释和块注释
 
 ``` kotlin
 // This is an end-of-line comment
@@ -164,11 +162,12 @@ Just like Java and JavaScript, Kotlin supports end-of-line and block comments.
    on multiple lines. */
 ```
 
-Unlike Java, block comments in Kotlin can be nested.
+和Java不一样的是Kotlin的块注释能够被嵌套
+
 
 See [Documenting Kotlin Code](kotlin-doc.html) for information on the documentation comment syntax.
 
-## Using string templates
+## 字符串模板
 
 <div class="sample" markdown="1">
 
@@ -190,7 +189,7 @@ fun main(args: Array<String>) {
 
 See [String templates](basic-types.html#string-templates).
 
-## Using conditional expressions
+## 条件表达式
 
 
 <div class="sample" markdown="1">
@@ -213,7 +212,7 @@ fun main(args: Array<String>) {
 </div>
 
 
-Using *if*{: .keyword } as an expression:
+用 *if*{: .keyword } 作为表达式:
 
 <div class="sample" markdown="1">
 
